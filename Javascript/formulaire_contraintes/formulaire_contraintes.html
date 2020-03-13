@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Formulaire avec contraintes</title>
+    <link rel="stylesheet" href="jarditou_bootstrap_css.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <form action="https://bienvu.net/script.php" form="form-group">
+                <div class="row">
+                    <div class="col-12">
+                        <p id="rouge">* Ces zones sont obligatoires</p>
+                    </div>
+                </div>
+                <fieldset>
+                    <div class="row">
+                        <legend>Vos coordonnées</legend>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            Société * : <input class="form-control" name="société" type="text" id="société">
+                            <span id="aideSociete"></span>
+                        </div>
+                        <div class="col-6">
+                            Personne à contacter * : <input class="form-control" name="contact" type="text" id="nom">
+                            <span id="aideContact"></span>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="col-6">
+                            adresse : <textarea class="form-control" type="text" name="adresse" id="adresse" rows="4"></textarea>
+                            <span id="aideAdress"></span>
+                        </div>                        
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    code postal * : <input class="form-control" name="CP" type="text" id="code_postal">
+                                    <span id="aideCP"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    ville * : <input class="form-control" name="ville" type="text" id="ville">
+                                    <span id="aideVille"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            email * : <input class="form-control" type="text" name="email" id="email" placeholder="X@YY.ZZ">
+                            <span id="aideMail"></span>
+                        </div>
+                        <div class="col-sm-6">
+                            téléphone : <input class="form-control" name="telephone" type="text" id="telephone">
+                            <span id="aidePhone"></span>
+
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="sujet"> Sélectionnez l'environnement technique du projet :</label>
+                            <select class="form-control" size="1" id="choix">
+                                <option>Choisissez</option>
+                                <option>Access</option>
+                                <option>Java</option>
+                                <option>Delphi</option>
+                                <option>Windev</option>
+                                <option>Visual Basic</option>
+                                <option>Power Builder</option>
+                                <option>Internet</option>
+                                <option>Intranet</option>
+                                <option>Windows NT</option>
+                                <option>Unix</option>
+                                <option>SQL Server</option>
+                                <option>Oracle</option>
+                                <option>Autres...</option>
+                            </select>
+                        </div>
+                        <div class="col-8">
+                            <textarea class="form-control" name="commentaire"  id="area" rows="3" cols="30"></textarea>
+                        </div>
+                    </div><br>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-success mb-2" id="submit">Envoyer</button>
+                        <button type="reset" class="btn btn-danger mb-2">Annuler</button>
+                    </div>
+            </form>
+        </section>
+        <script src="formulaire.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Saisissez un texte puis pressez le bouton 'Contrôle'</p>
+    <input type="text" id="nom">
+    <button type="submit" id="btn1">Contrôler</button>
+</body>
+
+</html>
+<script>
+    var elt = document.getElementById("btn1");
+    elt.addEventListener("click", function () {
+        var nom1 =document.getElementById("nom").value;
+        window.alert("Vous avez saisi " + nom1);
+    });
+</script>

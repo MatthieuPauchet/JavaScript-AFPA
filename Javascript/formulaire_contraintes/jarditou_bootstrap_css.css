@@ -1,0 +1,25 @@
+#rouge {
+    color: red;
+}
+
+
+.OK {
+    border-color: green;
+    border-width : 2px;
+}
+
+.KO {
+    border-color: red;
+    border-width : 3px;
+    font-weight: bolder;
+}
+
+.OK2 {
+    color: white;
+    background-color: green;
+}
+
+.KO2 {
+    color: white;
+    background-color: red;
+}

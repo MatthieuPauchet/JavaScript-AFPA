@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nombre magique</title>
+</head>
+
+<body>
+    <div id="label1">Entrez votre proposition (Entre 1 et 100)</div>
+    <input id="textBox1" value="">
+    <input type="button" id="btn1" value="Verifier" onclick="verif();">>
+</body>
+
+</html>
+<script>
+    var verif = function(){
+        var magic = parseInt(Math.random() * 100);
+        var n = 101;
+        var i = 0;
+        while (magic != n) {
+            n = window.prompt("Entrez un nombre entre 1 et 100");
+            i++
+            if (n == magic) {
+                window.alert("Vous avez trouvez en " + i + " fois!");
+                break;
+            }
+            else if (n > magic) {
+                window.alert("dommage trop grand !!");
+                //window.confirm("voulez vous rejouer ?");
+            }
+            else {
+                window.alert("dommage trop petit !!");
+                //window.confirm("voulez vous rejouer?")
+            }
+        }
+
+    }
+
+
+
+</script>
